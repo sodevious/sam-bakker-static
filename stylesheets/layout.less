@@ -1,0 +1,103 @@
+body { 
+	background-color: @grey; 
+	color: @offBlack;
+}
+
+header {
+	height: 100px;
+	border-bottom: 1px solid #003144;
+	.gradient(@blue, #004b5e, #005f76);
+
+	.logo h1 {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+
+		height: 71px;
+		margin-top: 14px;
+		background: url("../images/sam-bakker.png") no-repeat;
+	}
+	.social {
+		text-align: right; 
+	}
+}
+
+
+nav {
+	height: 50px;
+	font-family: @montserrat;
+	border-top: 1px solid #2B697A;
+	border-bottom: 1px solid #d2d2d2;
+	.gradient(@blue, #004353, #004b5e);
+	.drop-shadow(0, 5px, 20px, 0.2);
+
+	ul {
+		li {
+			margin-left: 20px;
+			margin-top: 15px;
+			text-shadow: 0px 1px 2px rgba(0,0,0,0.7);
+			text-transform: uppercase;
+			font-size: 18px;
+			display: inline-block;
+
+			a {
+				text-decoration: none;
+				color: @lightBlue;
+				&:hover { color: darken(@lightBlue, 20%); }
+			}
+		}
+	}
+}
+
+.hero {
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	color: @offWhite;
+	display: block;
+	margin-top: 20px;
+	.rounded(5px);
+	.gradient(@offBlack, #1b1c1c, #2c2f2f);
+	.box-shadow(0 1px 0px #494d4f inset);
+
+	h2 {
+		font-family: @montserrat;
+		font-weight: 700;
+		color: @offWhite;
+		padding-right: 10px;
+		margin-bottom: 25px;
+		margin-top: 20px;
+		text-align: right;
+		text-shadow: 0px 1px 7px #000000;
+		letter-spacing: -1px;
+	}
+
+	h3 {
+		padding-right: 10px;
+		padding-left: 30px;
+		letter-spacing: -1px;
+		color: @lightBlue;
+		text-align: right;
+		text-shadow: 0px -1px 1px #000000;
+		font-weight: 600;
+		font-style: italic;
+		font-family: @sourceSans;
+	}
+
+	a {
+
+	}
+
+	a.cta {
+		background: @red;
+		float: right;
+		margin: 30px;
+		font-family: @montserrat;
+		text-transform: uppercase;
+				letter-spacing: -1px;
+
+		text-decoration: none;
+		color: @offWhite;
+		font-size: 24px;
+		padding: 15px;
+	}
+}

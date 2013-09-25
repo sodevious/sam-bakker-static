@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Montserrat:400,700);
+
+@import "base.css";
+
+@import "skeleton.css";
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+body {
+  background-color: #d2d2d2;
+  color: #1a1a1a;
+}
+header {
+  height: 100px;
+  border-bottom: 1px solid #003144;
+  background: #004f60;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #004b5e), color-stop(1, #005f76));
+  background: -ms-linear-gradient(bottom, #004b5e, #005f76);
+  background: -moz-linear-gradient(center bottom, #004b5e 0%, #005f76 100%);
+  background: -o-linear-gradient(#005f76, #004b5e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005f76', endColorstr='#004b5e', GradientType=0);
+}
+header .logo h1 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 71px;
+  margin-top: 14px;
+  background: url("../images/sam-bakker.png") no-repeat;
+}
+header .social {
+  text-align: right;
+}
+nav {
+  height: 50px;
+  font-family: 'Montserrat', 'Gotham', 'Proxima Nova', Helvetica, sans-serif;
+  border-top: 1px solid #2B697A;
+  border-bottom: 1px solid #d2d2d2;
+  background: #004f60;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #004353), color-stop(1, #004b5e));
+  background: -ms-linear-gradient(bottom, #004353, #004b5e);
+  background: -moz-linear-gradient(center bottom, #004353 0%, #004b5e 100%);
+  background: -o-linear-gradient(#004b5e, #004353);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004b5e', endColorstr='#004353', GradientType=0);
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+nav ul li {
+  margin-left: 20px;
+  margin-top: 15px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-size: 18px;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #b8cbcf;
+}
+nav ul li a:hover {
+  color: #7b9ea6;
+}
+.hero {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  color: #f7f7f7;
+  display: block;
+  margin-top: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #1a1a1a;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1b1c1c), color-stop(1, #2c2f2f));
+  background: -ms-linear-gradient(bottom, #1b1c1c, #2c2f2f);
+  background: -moz-linear-gradient(center bottom, #1b1c1c 0%, #2c2f2f 100%);
+  background: -o-linear-gradient(#2c2f2f, #1b1c1c);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c2f2f', endColorstr='#1b1c1c', GradientType=0);
+  -webkit-box-shadow: 0 1px 0px #494d4f inset;
+  -moz-box-shadow: 0 1px 0px #494d4f inset;
+  box-shadow: 0 1px 0px #494d4f inset;
+}
+.hero h2 {
+  font-family: 'Montserrat', 'Gotham', 'Proxima Nova', Helvetica, sans-serif;
+  font-weight: 700;
+  color: #f7f7f7;
+  padding-right: 10px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  text-align: right;
+  text-shadow: 0px 1px 7px #000000;
+  letter-spacing: -1px;
+}
+.hero h3 {
+  padding-right: 10px;
+  padding-left: 30px;
+  letter-spacing: -1px;
+  color: #b8cbcf;
+  text-align: right;
+  text-shadow: 0px -1px 1px #000000;
+  font-weight: 600;
+  font-style: italic;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+.hero a.cta {
+  background: #c73b38;
+  float: right;
+  margin: 30px;
+  font-family: 'Montserrat', 'Gotham', 'Proxima Nova', Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 24px;
+  padding: 15px;
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  
+}
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
