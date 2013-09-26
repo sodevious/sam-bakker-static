@@ -54,10 +54,16 @@ nav {
 	box-sizing: border-box;
 	color: @offWhite;
 	display: block;
-	margin-top: 20px;
+	height: 320px;
+	margin-top: 30px;
 	.rounded(5px);
 	.gradient(@offBlack, #1b1c1c, #2c2f2f);
 	.box-shadow(0 1px 0px #494d4f inset);
+
+	img {
+		position: relative;
+		top: -35px;
+	}
 
 	h2 {
 		font-family: @montserrat;
@@ -84,20 +90,38 @@ nav {
 	}
 
 	a {
-
+		font-family: @sourceSans;
+		font-size: 22px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: @offWhite;
+		display: inline-block;
+		margin: 45px 10px 0 140px;
+		border-bottom: 1px solid @offWhite;
+		&:hover { color: darken(@offWhite, 30%); }	
 	}
 
 	a.cta {
 		background: @red;
 		float: right;
-		margin: 30px;
-		font-family: @montserrat;
-		text-transform: uppercase;
-				letter-spacing: -1px;
-
-		text-decoration: none;
-		color: @offWhite;
-		font-size: 24px;
+		margin: 30px 10px;
 		padding: 15px;
+		color: @offWhite;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		text-decoration: none;
+		text-shadow: 0px -1px 1px #832a23;
+		border: 1px solid #a52d2b;
+		font-family: @montserrat;
+		font-size: 24px;
+		.rounded(8px);
+		.gradient(@red, #a52d2b, #e44e3d);
+		.box-shadow(0 1px 0px #fa8f70 inset);
+
+		&:hover {
+			border: 1px solid #6f1e1d;
+			.box-shadow(0 1px 0px #d96f6e inset);
+			.gradient(@red, #8a2624, #c03432);
+		}
 	}
 }
